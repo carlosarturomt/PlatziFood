@@ -1,0 +1,12 @@
+//- V A R I A B L E S
+-var star = '&starf;'
+
+//- M I X I N 
+mixin card(url, alt, title, text, price, stars)
+  .mt-8.mx-4.rounded-lg(class="md:w-1/2 md:flex md:bg-white ")
+    div: img.w-full.rounded-lg(src=url, alt=alt)
+    .relative.shadow-lg.bg-white.rounded-lg.-mt-2.mx-2.p-2(class="md:bg-transparent md:shadow-none")
+      h2.text-xl.uppercase.tracking-tight.font-semibold.text-gray-900.leading-snug(class="md:text-lg")=title 
+      p.text-gray-700.leading-snug=text
+      .text-sm.font-semibold.text-gray-700.mt-2=price
+      .text-sm.text-yellow-700.mt-2=stars

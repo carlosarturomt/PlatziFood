@@ -1,0 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+/* E J E M P L O - example-grid.htm */
+/* .btn-blue:hover {
+  @apply bg-blue-900;
+  @apply uppercase;
+} */
+
+@tailwind utilities;
