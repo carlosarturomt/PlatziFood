@@ -1,5 +1,7 @@
 extend components/plantilla.pug
 block contenidos
-  div(class="md:flex md:flex-row")
-    +card('https://images.unsplash.com/photo-1572448862527-d3c904757de6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', 'imagén de hamburguea','Hamburguesa con Queso','Hamburgueso con queso y aderezo de chipotle.','MXN   $59.99', '&starf;&starf;&starf;&starf;&star;/36 reseñas')
-    +card('https://images.unsplash.com/photo-1536936114683-1e27e62e3e9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1. 2.1&auto=format&fit=crop&w=500&q=80', 'imagén de bebida','Bebida de Sandía','Bebida suculenta a base se sandía.','MXN $29.99',  '&starf;&starf;&starf;&starf;&star;/36 reseñas')
+  main 
+    .h-56.bg-no-repeat.bg-cover.bg-center(class="md:h-100" style="background-image: url('../assets/imgs/restaurant.webp'); object-fit: cover;")
+    .container.mx-auto(class="md:flex md:flex-row")
+      +card('../assets/imgs/burger.jpeg', 'imagén de hamburguea','Hamburguesa con Queso','Hamburgueso con queso y aderezo de  chipotle.','MXN   $59.99', '&starf;&starf;&starf;&starf;&star;/36 reseñas')
+      +card('../assets/imgs/bebida1.jpeg', 'imagén de bebida','Bebida de Sandía','Bebida suculenta a base se sandía.','MXN $29.99',   '&starf;&starf;&starf;&starf;&star;/36 reseñas')
