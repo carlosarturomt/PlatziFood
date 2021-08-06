@@ -6,5 +6,29 @@
   @apply bg-blue-900;
   @apply uppercase;
 } */
+.form-control {
+  @apply w-full py-1 px-4 rounded text-gray-800 placeholder-secundary bg-gray-200 border border-blue-300 outline-none leading-snug;
+}
+
+.form-control:hover {
+  @apply bg-white;
+}
+
+.btn {
+  @apply shadow-xl rounded py-1 px-4 mx-auto block bg-gray-400 text-secundary;
+}
+
+.btn-primary {
+  @apply shadow-xl rounded py-1 px-4 block bg-yellow-600 text-white;
+}
+
+
+.btn:hover {
+  @apply shadow-none bg-gray-700 text-white;
+}
+
+.btn-primary:hover {
+  @apply shadow-none bg-yellow-700
+}
 
 @tailwind utilities;

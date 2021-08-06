@@ -24,11 +24,36 @@
     <link rel="icon" type="image/png" href="https://static.platzi.com/media/achievements/badge-tailwind-css-2-0c5a963b-a978-4304-aa25-e24c834f624a.png"/>
     <link rel="stylesheet" href="../../public/css/styles.css"/>
   </head>
-  <body class="min-h-screen bg-gray-500">
-    <div class="bg-secundary text-white flex justify-between items-center px-2">
-      <div><img class="h-10 py-2" src="../assets/imgs/logo-w.svg" alt=""/></div>
-      <div class="text-3xl">&equiv;</div>
-    </div>
+  <body class="min-h-screen">
+    <nav class="bg-secundary text-gray-100 fixed z-10 w-full">
+      <div class="flex justify-between items-center px-2">
+        <div><img class="h-10 py-2" src="../assets/imgs/logo-w.svg" alt=""/></div>
+        <div class="text-3xl">&equiv;</div>
+      </div>
+      <div class="mx-2 mt-1">
+        <input class="form-control" type="search" placeholder="Búsqueda"/>
+      </div>
+      <div class="mx-2 justify-around py-2 md:flex">
+        <div class="flex">
+           Precio
+          <div class="ml-2">$</div>
+          <div class="ml-2 text-primary">$$</div>
+          <div class="ml-2">$$$</div>
+          <div class="ml-2">$$$$</div>
+        </div>
+        <div class="flex">
+           Calificación
+          <div class="ml-2 text-primary">&starf;</div>
+          <div class="ml-px text-primary">&starf;</div>
+          <div class="ml-px text-primary">&starf;</div>
+          <div class="ml-px text-primary">&starf;</div>
+          <div class="ml-px">&star;</div>
+        </div>
+        <div>
+          <button class="btn-primary">Filtrar</button>
+        </div>
+      </div>
+    </nav>
     <footer class="bg-secundary mt-5 text-white">
       <div class="justify-around md:flex md:flex-row-reverse">
         <div class="ml-8 pt-4">
@@ -46,4 +71,5 @@
     </footer>
   </body>
   <script src="https://kit.fontawesome.com/6e8284665f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"> </script>
 </html>

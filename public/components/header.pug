@@ -1,3 +1,22 @@
-.bg-secundary.text-white.flex.justify-between.items-center.px-2
-  div: img.h-10.py-2(src="../assets/imgs/logo-w.svg", alt="")
-  .text-3xl &equiv;
+nav.bg-secundary.text-gray-100.fixed.z-10.w-full(x-data="{ open: false }")
+  .flex.justify-between.items-center.px-2
+    div: img.h-10.py-2(src="../assets/imgs/logo-w.svg", alt="")
+    .text-3xl(@click="open = true") &equiv;
+  div(x-show="open" @click.away="open = false")
+    .mx-2.mt-1
+      input.form-control(type="search" placeholder="Búsqueda")
+    .mx-2.justify-around.py-2(class="md:flex")
+      .flex 
+        | Precio
+        .ml-2 $
+        .ml-2.text-primary $$
+        .ml-2 $$$
+        .ml-2 $$$$
+      .flex 
+        | Calificación
+        .ml-2.text-primary &starf;
+        .ml-px.text-primary &starf;
+        .ml-px.text-primary &starf;
+        .ml-px.text-primary &starf;
+        .ml-px &star;
+      div: button.btn-primary Filtrar
